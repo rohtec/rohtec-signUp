@@ -136,16 +136,29 @@ img {
 
     -webkit-appearance:none;
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 768px) {
 	body {
 		background-color: white;
+		display: flex;
+		width: 99vw;
+		height: 99vh;
 	}
 	 section {
+	 	margin: 0;
 	 	background-color: white;
 	 	height: 94vh;
+	 	width: 98vw;
 	 	display: grid;
 	 	grid-template-columns: 1fr;
 	 }
+	 .right form {
+	display: flex;
+	flex-flow: column nowrap;
+/*	border: 1px solid red;*/
+	height: 91vh;
+	gap: 16px;
+	align-items: center;
+}
 	 .red {
 	flex-flow: column nowrap;
 	display: flex;
@@ -204,6 +217,15 @@ img {
 	width: 15px;
 	height: 11px;
 	transform: rotate(-90deg);
+}
+label {
+	font-size: 16px;
+	font-family: Poppins;
+	font-weight: 500;
+	color: rgba(36, 36, 36, 0.9);
+/*    border: 1px solid red;*/
+    width: 19.5rem;
+	height: 2.6rem;
 }
 
 }
